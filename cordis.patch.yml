@@ -1,0 +1,8 @@
+- insert:
+    - id: speech-to-text-parlaspeech-hr
+      name: dsh-voice-parlaspeech-hr
+      config:
+        providerId: parlaspeech-hr
+        modelId: classla/wav2vec2-xls-r-parlaspeech-hr
+        modelDirectory: ''
+        pythonPath: ''
