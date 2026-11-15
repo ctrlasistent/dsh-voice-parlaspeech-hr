@@ -9,7 +9,7 @@ Sve se odvija lokalno, bez API ključeva, usluga u oblaku ili vanjskih poslužit
 
 ## Glavne značajke
 
-- **Optimiziran za hrvatski jezik:** WER od 7,61 % na testnom skupu ParlaSpeech-HR (za Whisper small navodi se približno 15 - 20 %).
+- **Optimiziran za hrvatski jezik:** WER od 7,61 % na testnom skupu ParlaSpeech-HR
 - **Višejezična podrška:** Podržava hrvatski (`hr`) i automatsko prepoznavanje jezika (`auto`).
 - **Rad bez interneta:** Ne zahtijeva API ključ ni internetsku vezu nakon jednokratnog preuzimanja modela.
 - **Bez zasebnog poslužitelja:** Koristi postojeće mogućnosti DSH Voice Input dodatka (mikrofon, valni prikaz i umetanje teksta u poruku).
@@ -33,7 +33,7 @@ Modeli su dostupni na [Hugging Faceu](https://huggingface.co/classla).
 > hrvatski jezik.
 
 
-• Prilikom **prve upotrebe** plugin stvori Python okruženje u `runtime/venv/`, instalira Python pakete i preuzme model s Hugging Facea. Zadani model zauzima približno 1,2 GB, a pohranjuje se u `~/.cache/huggingface/`.
+• Prilikom **prve upotrebe** plugin stvori Python okruženje u `runtime/venv/`, instalira Python pakete i preuzima model s Hugging Facea. Zadani model zauzima približno 1,2 GB, a pohranjuje se u `~/.cache/huggingface/`.
 
 ## Preduvjet
 
@@ -78,9 +78,5 @@ Plugin tada pri prvom korištenju automatski:
         modelId: classla/wav2vec2-xls-r-parlaspeech-hr
         modelDirectory: ''
         pythonPath: ''
-```        
-     
-### Instalacija potrebnih Python paketa
+```
 
-```bash
-pip install transformers torch soundfile librosa numpy
